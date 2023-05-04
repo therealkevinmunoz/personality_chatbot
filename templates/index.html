@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <script async src="{{url_for('static', filename='js/main.js')}}"></script>
+</head>
+<body>
+    <div id="chat-container">
+        <div class="header">Chat</div>
+        <div id="chat-response">
+            <div id="mbti-section-container">
+                <span>Pick your personality type. If you don't know yours, take the <a href="https://www.16personalities.com/free-personality-test" target="_blank">16 Personalities</a> assessment.</span>
+                <div id="mbti-container">
+                    <div>ISTJ</div>
+                    <div>ISFJ</div>
+                    <div>INFJ</div>
+                    <div>INTJ</div>
+                    <div>ISTP</div>
+                    <div>ISFP</div>
+                    <div>INFP</div>
+                    <div>INTP</div>
+                    <div>ESTP</div>
+                    <div>ESFP</div>
+                    <div>ENFP</div>
+                    <div>ENTP</div>
+                    <div>ESTJ</div>
+                    <div>ESFJ</div>
+                    <div>ENFJ</div>
+                    <div>ENTJ</div>
+                </div>  
+            </div>
+            <div id="categories-section-container">
+                <span>Learn more about your personality and...</span>
+                <div id="categories-container">
+                    <div>Love</div>
+                    <div>Career</div>
+                    <div>Health</div>
+                    <div>Social Life</div>
+                </div>
+            </div>
+        </div>
+        <div id="input-container">
+            <input id="chat-input">
+            <button id="send-btn">&#10153;</button>
+        </div>
+    </div>
+</body>
+</html>
